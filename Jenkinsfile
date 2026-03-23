@@ -13,13 +13,13 @@ ent any  // Use any available agent
 
         stage('Build') {
             steps {
-                sh 'gradle build'  // Run Maven build
+                sh '/opt/gradle/bin/gradle build'  // Run Maven build
             }
         }
 
         stage('Test') {
             steps {
-                sh 'gradle run'  // Run unit tests
+                sh '/opt/gradle/bin/gradle run'  // Run unit tests
             }
         }
 
